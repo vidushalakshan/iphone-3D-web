@@ -1,6 +1,7 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import React from 'react'
+import { watchImg } from '../utils'
 
 const Highlights = () => {
 
@@ -14,8 +15,15 @@ const Highlights = () => {
   return (
     <section id='highlights' className='w-screen overflow-hidden h-full common-padding bg-zinc'>
       <div className='screen-max-width '>
-        <div>
+        <div className='mb-12 w-full items-end justify-center '>
             <h1 id='title' className='section-heading'>Get the highlights.</h1>
+
+            <div className="flex flex-wrap items-end gap-5">
+              <p className='link'>
+                Watch the film
+                <img src={watchImg} alt='wachimg' className='ml-2'/>
+              </p>
+            </div>
         </div>
       </div>
     </section>
